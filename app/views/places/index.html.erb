@@ -1,0 +1,12 @@
+<h1> <b> Places I've Been </b></h1>
+
+<div class="row">
+  <% for place in @places %>
+    <div class="col-3">
+      <h4><a href="/places/<%= place["id"]%>"> <%= place["name"] %></h4>
+      <!-- <p><%= place["description"] %></p> -->
+    </div>
+  <% end %>
+</div>
+
+<p><a href="/places/new">Add a new place</a></p>
